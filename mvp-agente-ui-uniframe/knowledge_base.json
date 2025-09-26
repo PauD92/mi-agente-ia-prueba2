@@ -1,0 +1,28 @@
+[
+  {
+    "componenteNombre": "mi-boton",
+    "aiHint": "Usar para acciones principales o secundarias que el usuario debe ejecutar, como 'enviar', 'cancelar', 'guardar', 'aceptar'.",
+    "propiedades": [
+      { "nombre": "color", "tipo": "string", "descripcion": "Puede ser 'primario' o 'secundario'." },
+      { "nombre": "texto", "tipo": "string", "descripcion": "El texto que se muestra dentro del botón." }
+    ],
+    "ejemploCodigo": "<mi-boton color=\"primario\" texto=\"Enviar Formulario\"></mi-boton>"
+  },
+  {
+    "componenteNombre": "mi-input-texto",
+    "aiHint": "Usar para capturar texto del usuario como nombres, emails, direcciones, asuntos.",
+    "propiedades": [
+      { "nombre": "label", "tipo": "string", "descripcion": "La etiqueta que se muestra arriba del campo." },
+      { "nombre": "placeholder", "tipo": "string", "descripcion": "El texto de ejemplo que se muestra dentro del campo." }
+    ],
+    "ejemploCodigo": "<mi-input-texto label=\"Correo Electrónico\" placeholder=\"ejemplo@dominio.com\"></mi-input-texto>"
+  },
+  {
+    "componenteNombre": "mi-titulo",
+    "aiHint": "Usar para mostrar el título principal de una pantalla o sección.",
+    "propiedades": [
+      { "nombre": "texto", "tipo": "string", "descripcion": "El contenido del título." }
+    ],
+    "ejemploCodigo": "<mi-titulo texto=\"Inicio de Sesión\"></mi-titulo>"
+  }
+]

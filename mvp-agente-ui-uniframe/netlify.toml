@@ -1,0 +1,4 @@
+[functions]
+  directory = "netlify/functions"
+  included_files = ["knowledge_base.json"]
+  node_bundler = "esbuild"
