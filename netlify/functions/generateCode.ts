@@ -40,9 +40,8 @@ export const handler: Handler = async (event: HandlerEvent) => {
     `;
     
     const genAI = new GoogleGenerativeAI(API_KEY);
-    // const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash-latest" })
-    const model = genAI.getGenerativeModel({ model: "gemma-3-4b-it" });
-    const result = await model.generateContent(finalPrompt);
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" })
+      const result = await model.generateContent(finalPrompt);
     const response = await result.response;
     const code = response.text();
 
