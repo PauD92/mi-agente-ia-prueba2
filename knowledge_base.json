@@ -1,28 +1,1171 @@
 [
   {
-    "componenteNombre": "mi-boton",
-    "aiHint": "Usar para acciones principales o secundarias que el usuario debe ejecutar, como 'enviar', 'cancelar', 'guardar', 'aceptar'.",
-    "propiedades": [
-      { "nombre": "color", "tipo": "string", "descripcion": "Puede ser 'primario' o 'secundario'." },
-      { "nombre": "texto", "tipo": "string", "descripcion": "El texto que se muestra dentro del botón." }
-    ],
-    "ejemploCodigo": "<mi-boton color=\"primario\" texto=\"Enviar Formulario\"></mi-boton>"
+    "componenteNombre": "Uniframe/Components/Tarjetas",
+    "selector": "app-tarjeta",
+    "aiHint": "COMPLETAR HINT PARA LA IA",
+    "api": {
+      "inputs": [],
+      "outputs": []
+    },
+    "documentacion": {},
+    "ejemplos": [
+      {
+        "nombre": "Tarjeta",
+        "configuracion": {}
+      }
+    ]
   },
   {
-    "componenteNombre": "mi-input-texto",
-    "aiHint": "Usar para capturar texto del usuario como nombres, emails, direcciones, asuntos.",
-    "propiedades": [
-      { "nombre": "label", "tipo": "string", "descripcion": "La etiqueta que se muestra arriba del campo." },
-      { "nombre": "placeholder", "tipo": "string", "descripcion": "El texto de ejemplo que se muestra dentro del campo." }
-    ],
-    "ejemploCodigo": "<mi-input-texto label=\"Correo Electrónico\" placeholder=\"ejemplo@dominio.com\"></mi-input-texto>"
+    "componenteNombre": "Componentes/Tag",
+    "selector": "uni-tag",
+    "aiHint": "COMPLETAR HINT PARA LA IA",
+    "api": {
+      "inputs": [
+        {
+          "nombre": "label",
+          "tipo": "string",
+          "valorPorDefecto": "'Tag'"
+        },
+        {
+          "nombre": "variant",
+          "tipo": "import(\"C:/Users/Usuario/Proyectos/UniFrame/uniframe/projects/uniframe/components/tag/tag.types\").TagVariant",
+          "valoresPermitidos": [
+            "success",
+            "neutral",
+            "danger"
+          ]
+        },
+        {
+          "nombre": "bgColor",
+          "tipo": "string"
+        },
+        {
+          "nombre": "color",
+          "tipo": "string"
+        },
+        {
+          "nombre": "showIcon",
+          "tipo": "boolean"
+        },
+        {
+          "nombre": "icon",
+          "tipo": "string"
+        },
+        {
+          "nombre": "clickable",
+          "tipo": "boolean"
+        },
+        {
+          "nombre": "size",
+          "tipo": "\"default\" | \"sm\"",
+          "valoresPermitidos": [
+            "default",
+            "sm"
+          ]
+        },
+        {
+          "nombre": "template",
+          "tipo": "import(\"C:/Users/Usuario/Proyectos/UniFrame/uniframe/node_modules/@angular/core/chrome_dev_tools_performance.d\").WritableSignal<import(\"C:/Users/Usuario/Proyectos/UniFrame/uniframe/projects/uniframe/components/tag/tag.component\").TagTemplate>",
+          "valorPorDefecto": "signal<TagTemplate>({})"
+        }
+      ],
+      "outputs": [
+        {
+          "nombre": "onClick",
+          "tipo": "void"
+        }
+      ]
+    },
+    "documentacion": {},
+    "ejemplos": [
+      {
+        "nombre": "TagDefault",
+        "configuracion": {
+          "label": "Tag default",
+          "size": "default",
+          "clickable": false,
+          "variant": null
+        }
+      },
+      {
+        "nombre": "TagNeutral",
+        "configuracion": {
+          "label": "Tag neutral",
+          "size": "default",
+          "clickable": false,
+          "variant": "neutral"
+        }
+      },
+      {
+        "nombre": "TagSuccess",
+        "configuracion": {
+          "label": "Tag success",
+          "size": "default",
+          "clickable": false,
+          "variant": "success"
+        }
+      },
+      {
+        "nombre": "TagDanger",
+        "configuracion": {
+          "label": "Tag danger",
+          "size": "default",
+          "clickable": false,
+          "variant": "danger"
+        }
+      },
+      {
+        "nombre": "Tagvariant",
+        "configuracion": {
+          "label": "Tag default",
+          "size": "default",
+          "clickable": false,
+          "variant": null
+        }
+      },
+      {
+        "nombre": "TagSizeDefault",
+        "configuracion": {
+          "label": "Default",
+          "size": "default",
+          "clickable": false,
+          "variant": null
+        }
+      },
+      {
+        "nombre": "TagSizeSmall",
+        "configuracion": {
+          "label": "Small",
+          "size": "sm",
+          "clickable": false,
+          "variant": null
+        }
+      }
+    ]
   },
   {
-    "componenteNombre": "mi-titulo",
-    "aiHint": "Usar para mostrar el título principal de una pantalla o sección.",
-    "propiedades": [
-      { "nombre": "texto", "tipo": "string", "descripcion": "El contenido del título." }
-    ],
-    "ejemploCodigo": "<mi-titulo texto=\"Inicio de Sesión\"></mi-titulo>"
+    "componenteNombre": "Componentes/Navbar",
+    "selector": "uni-navbar",
+    "aiHint": "COMPLETAR HINT PARA LA IA",
+    "api": {
+      "inputs": [
+        {
+          "nombre": "logoImageSrc",
+          "tipo": "string",
+          "valorPorDefecto": "''"
+        },
+        {
+          "nombre": "logoRoute",
+          "tipo": "string",
+          "valorPorDefecto": "null"
+        },
+        {
+          "nombre": "buttons",
+          "tipo": "import(\"C:/Users/Usuario/Proyectos/UniFrame/uniframe/projects/uniframe/components/navbar/navbar.types\").NavbarButton[]",
+          "valorPorDefecto": "[]"
+        }
+      ],
+      "outputs": [
+        {
+          "nombre": "buttonClicked",
+          "tipo": "void"
+        }
+      ]
+    },
+    "documentacion": {},
+    "ejemplos": [
+      {
+        "nombre": "Navbar",
+        "configuracion": {
+          "buttons": null,
+          "logoImageSrc": "https://unitech-corp.com/src/assets/images/logos/logo-unitech-blanco-hor.svg"
+        }
+      }
+    ]
+  },
+  {
+    "componenteNombre": "Uniframe/Components/Menu Modulos",
+    "selector": "uni-menu-modulos",
+    "aiHint": "COMPLETAR HINT PARA LA IA",
+    "api": {
+      "inputs": [
+        {
+          "nombre": "icon",
+          "tipo": "string",
+          "valorPorDefecto": "''"
+        }
+      ],
+      "outputs": []
+    },
+    "documentacion": {},
+    "ejemplos": [
+      {
+        "nombre": "Menumodulos",
+        "configuracion": {}
+      }
+    ]
+  },
+  {
+    "componenteNombre": "Componentes/Header",
+    "selector": "uni-header",
+    "aiHint": "COMPLETAR HINT PARA LA IA",
+    "api": {
+      "inputs": [
+        {
+          "nombre": "title",
+          "tipo": "string",
+          "valorPorDefecto": "''"
+        },
+        {
+          "nombre": "showReturnButton",
+          "tipo": "boolean"
+        },
+        {
+          "nombre": "showIcon",
+          "tipo": "boolean"
+        },
+        {
+          "nombre": "icon",
+          "tipo": "string"
+        },
+        {
+          "nombre": "routerLinkPath",
+          "tipo": "string",
+          "valorPorDefecto": "'../'"
+        },
+        {
+          "nombre": "dividerPrimary",
+          "tipo": "boolean",
+          "valorPorDefecto": "true"
+        }
+      ],
+      "outputs": []
+    },
+    "documentacion": {},
+    "ejemplos": [
+      {
+        "nombre": "HeaderModulo",
+        "configuracion": {
+          "title": "Expedientes",
+          "icon": "folder",
+          "showIcon": true,
+          "showReturnButton": false
+        }
+      },
+      {
+        "nombre": "HeaderFicha",
+        "configuracion": {
+          "title": "Carátula",
+          "showIcon": false,
+          "showReturnButton": true,
+          "routerLinkPath": "../"
+        }
+      },
+      {
+        "nombre": "HeaderVariant",
+        "configuracion": {
+          "title": "Expedientes",
+          "icon": "folder",
+          "showIcon": true,
+          "showReturnButton": false,
+          "routerLinkPath": "../"
+        }
+      },
+      {
+        "nombre": "HeaderFichaCompleto",
+        "configuracion": {
+          "title": "Carátula",
+          "showReturnButton": true
+        }
+      },
+      {
+        "nombre": "HeaderModuloCompleto",
+        "configuracion": {
+          "title": "Carátula",
+          "showReturnButton": true
+        }
+      }
+    ]
+  },
+  {
+    "componenteNombre": "Uniframe/Components/Drag and Drop",
+    "selector": "uni-drag-and-drop",
+    "aiHint": "COMPLETAR HINT PARA LA IA",
+    "api": {
+      "inputs": [],
+      "outputs": []
+    },
+    "documentacion": {},
+    "ejemplos": [
+      {
+        "nombre": "DragandDrop",
+        "configuracion": {}
+      }
+    ]
+  },
+  {
+    "componenteNombre": "Uniframe/Components/button animado",
+    "selector": "uni-button-animado",
+    "aiHint": "COMPLETAR HINT PARA LA IA",
+    "api": {
+      "inputs": [],
+      "outputs": []
+    },
+    "documentacion": {},
+    "ejemplos": [
+      {
+        "nombre": "buttonanimado",
+        "configuracion": {}
+      }
+    ]
+  },
+  {
+    "componenteNombre": "Componentes/Breadcrumb",
+    "selector": "uni-breadcrumb",
+    "aiHint": "COMPLETAR HINT PARA LA IA",
+    "api": {
+      "inputs": [
+        {
+          "nombre": "items",
+          "tipo": "import(\"C:/Users/Usuario/Proyectos/UniFrame/uniframe/projects/uniframe/components/breadcrumb/breadcrumb.component\").BreadcrumbItem[]",
+          "valorPorDefecto": "[]"
+        }
+      ],
+      "outputs": []
+    },
+    "documentacion": {},
+    "ejemplos": [
+      {
+        "nombre": "Breadcumb",
+        "configuracion": {
+          "items": null
+        }
+      }
+    ]
+  },
+  {
+    "componenteNombre": "Componentes/Collapsibles/HorizontalCollapsible",
+    "selector": "uni-h-collapsible",
+    "aiHint": "COMPLETAR HINT PARA LA IA",
+    "api": {
+      "inputs": [
+        {
+          "nombre": "variant",
+          "tipo": "import(\"C:/Users/Usuario/Proyectos/UniFrame/uniframe/projects/uniframe/components/collapsibles/collapsible.types\").CollapsibleVariant",
+          "valorPorDefecto": "'default'",
+          "valoresPermitidos": [
+            "default",
+            "outlined",
+            "raised"
+          ]
+        },
+        {
+          "nombre": "direction",
+          "tipo": "\"left-to-right\" | \"right-to-left\"",
+          "valorPorDefecto": "'left-to-right'",
+          "valoresPermitidos": [
+            "left-to-right",
+            "right-to-left"
+          ]
+        },
+        {
+          "nombre": "disabled",
+          "tipo": "boolean",
+          "valorPorDefecto": "false"
+        },
+        {
+          "nombre": "expanded",
+          "tipo": "boolean",
+          "valorPorDefecto": "false"
+        },
+        {
+          "nombre": "template",
+          "tipo": "import(\"C:/Users/Usuario/Proyectos/UniFrame/uniframe/node_modules/@angular/core/chrome_dev_tools_performance.d\").WritableSignal<import(\"C:/Users/Usuario/Proyectos/UniFrame/uniframe/projects/uniframe/components/collapsibles/horizontal-collapsible/horizontal-collapsible.component\").HorizontalCollapsibleTemplate>",
+          "valorPorDefecto": "signal<HorizontalCollapsibleTemplate>({})"
+        }
+      ],
+      "outputs": [
+        {
+          "nombre": "onToggle",
+          "tipo": "void"
+        }
+      ]
+    },
+    "documentacion": {},
+    "ejemplos": [
+      {
+        "nombre": "HorizontalVariant",
+        "configuracion": {
+          "variant": "outlined",
+          "direction": "left-to-right"
+        }
+      },
+      {
+        "nombre": "HorizontalCollapsibleOutlined",
+        "configuracion": {
+          "variant": "outlined",
+          "direction": "left-to-right"
+        }
+      },
+      {
+        "nombre": "HorizontalCollapsibleOutlinedRight",
+        "configuracion": {
+          "variant": "outlined",
+          "direction": "right-to-left"
+        }
+      }
+    ]
+  },
+  {
+    "componenteNombre": "Componentes/Collapsibles/Collapsible",
+    "selector": "uni-collapsible",
+    "aiHint": "COMPLETAR HINT PARA LA IA",
+    "api": {
+      "inputs": [
+        {
+          "nombre": "variant",
+          "tipo": "import(\"C:/Users/Usuario/Proyectos/UniFrame/uniframe/projects/uniframe/components/collapsibles/collapsible.types\").CollapsibleVariant",
+          "valorPorDefecto": "'default'",
+          "valoresPermitidos": [
+            "default",
+            "outlined",
+            "raised"
+          ]
+        },
+        {
+          "nombre": "title",
+          "tipo": "string",
+          "valorPorDefecto": "''"
+        },
+        {
+          "nombre": "summaryTitle",
+          "tipo": "string",
+          "valorPorDefecto": "''"
+        },
+        {
+          "nombre": "summary",
+          "tipo": "string",
+          "valorPorDefecto": "''"
+        },
+        {
+          "nombre": "disabled",
+          "tipo": "boolean",
+          "valorPorDefecto": "false"
+        },
+        {
+          "nombre": "expanded",
+          "tipo": "boolean",
+          "valorPorDefecto": "false"
+        },
+        {
+          "nombre": "template",
+          "tipo": "import(\"C:/Users/Usuario/Proyectos/UniFrame/uniframe/node_modules/@angular/core/chrome_dev_tools_performance.d\").WritableSignal<import(\"C:/Users/Usuario/Proyectos/UniFrame/uniframe/projects/uniframe/components/collapsibles/collapsible/collapsible.component\").CollapsibleTemplate>",
+          "valorPorDefecto": "signal<CollapsibleTemplate>({})"
+        }
+      ],
+      "outputs": [
+        {
+          "nombre": "onToggle",
+          "tipo": "void"
+        }
+      ]
+    },
+    "documentacion": {},
+    "ejemplos": [
+      {
+        "nombre": "Collapsible",
+        "configuracion": {
+          "variant": "default",
+          "title": "Seccción A",
+          "summaryTitle": "Resumen",
+          "summary": "Este es un resumen"
+        }
+      },
+      {
+        "nombre": "CollapsibleDisabled",
+        "configuracion": {
+          "variant": "default",
+          "title": "Seccción A",
+          "summaryTitle": "Resumen",
+          "summary": "Este es un resumen",
+          "disabled": true
+        }
+      },
+      {
+        "nombre": "CollapsibleRaised",
+        "configuracion": {
+          "variant": "raised",
+          "title": "Seccción B",
+          "summaryTitle": "Resumen",
+          "summary": "Este es un resumen"
+        }
+      },
+      {
+        "nombre": "CollapsibleRaisedDisabled",
+        "configuracion": {
+          "variant": "raised",
+          "title": "Seccción B",
+          "summaryTitle": "Resumen",
+          "summary": "Este es un resumen",
+          "disabled": true
+        }
+      },
+      {
+        "nombre": "CollapsibleOutlined",
+        "configuracion": {
+          "variant": "outlined",
+          "title": "Seccción B",
+          "summaryTitle": "Resumen",
+          "summary": "Este es un resumen"
+        }
+      },
+      {
+        "nombre": "CollapsibleOutlinedDisabled",
+        "configuracion": {
+          "variant": "outlined",
+          "title": "Seccción B",
+          "summaryTitle": "Resumen",
+          "summary": "Este es un resumen",
+          "disabled": true
+        }
+      },
+      {
+        "nombre": "CollapsibleVariant",
+        "configuracion": {
+          "variant": "default",
+          "title": "Colapsible demo",
+          "summaryTitle": "Resumen",
+          "summary": "Este es un resumen",
+          "disabled": false
+        }
+      }
+    ]
+  },
+  {
+    "componenteNombre": "Componentes/Buttons/MenuButton",
+    "selector": "uni-menu-button",
+    "aiHint": "COMPLETAR HINT PARA LA IA",
+    "api": {
+      "inputs": [
+        {
+          "nombre": "label",
+          "tipo": "string",
+          "valorPorDefecto": "''"
+        },
+        {
+          "nombre": "items",
+          "tipo": "import(\"C:/Users/Usuario/Proyectos/UniFrame/uniframe/projects/uniframe/components/buttons/menu-button/menu-button.component\").MenuButtonItem[]",
+          "valorPorDefecto": "[]"
+        },
+        {
+          "nombre": "size",
+          "tipo": "import(\"C:/Users/Usuario/Proyectos/UniFrame/uniframe/projects/uniframe/components/buttons/button.types\").ButtonSize",
+          "valoresPermitidos": [
+            "sm",
+            "lg",
+            "default"
+          ]
+        },
+        {
+          "nombre": "variant",
+          "tipo": "import(\"C:/Users/Usuario/Proyectos/UniFrame/uniframe/projects/uniframe/components/buttons/button.types\").ButtonVariant",
+          "valoresPermitidos": [
+            "primary",
+            "primary-outline",
+            "negative",
+            "negative-outline",
+            "icon",
+            "link"
+          ]
+        },
+        {
+          "nombre": "icon",
+          "tipo": "string"
+        },
+        {
+          "nombre": "showIcon",
+          "tipo": "boolean"
+        },
+        {
+          "nombre": "showArrowIcon",
+          "tipo": "boolean"
+        },
+        {
+          "nombre": "disabled",
+          "tipo": "boolean",
+          "valorPorDefecto": "false"
+        },
+        {
+          "nombre": "template",
+          "tipo": "import(\"C:/Users/Usuario/Proyectos/UniFrame/uniframe/node_modules/@angular/core/chrome_dev_tools_performance.d\").WritableSignal<import(\"C:/Users/Usuario/Proyectos/UniFrame/uniframe/projects/uniframe/components/buttons/menu-button/menu-button.component\").MenuButtonTemplate>",
+          "valorPorDefecto": "signal<MenuButtonTemplate>({})"
+        },
+        {
+          "nombre": "ariaLabel",
+          "tipo": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "nombre": "itemClicked",
+          "tipo": "void"
+        }
+      ]
+    },
+    "documentacion": {},
+    "ejemplos": [
+      {
+        "nombre": "Primary",
+        "configuracion": {
+          "label": "Menu Primary",
+          "variant": "primary",
+          "showIcon": false,
+          "size": "default"
+        }
+      },
+      {
+        "nombre": "PrimaryOutline",
+        "configuracion": {
+          "label": "Menu Primary Outline",
+          "variant": "primary-outline",
+          "showIcon": false,
+          "size": "default"
+        }
+      },
+      {
+        "nombre": "IconOnly",
+        "configuracion": {
+          "variant": "icon",
+          "icon": "more_vert",
+          "showIcon": true,
+          "showArrowIcon": false,
+          "size": "default",
+          "ariaLabel": "Menu Icon Button"
+        }
+      },
+      {
+        "nombre": "CustomItems",
+        "configuracion": {
+          "label": "Custom Menu",
+          "variant": "primary",
+          "items": null
+        }
+      },
+      {
+        "nombre": "PrimaryVariant",
+        "configuracion": {
+          "label": "Menu Button",
+          "variant": "primary",
+          "showIcon": true,
+          "icon": "task_alt",
+          "size": "default"
+        }
+      },
+      {
+        "nombre": "Active",
+        "configuracion": {
+          "label": "Default",
+          "showIcon": false,
+          "variant": "primary",
+          "size": "default"
+        }
+      },
+      {
+        "nombre": "Hover",
+        "configuracion": {
+          "label": "Hover",
+          "showIcon": false,
+          "variant": "primary",
+          "size": "default"
+        }
+      },
+      {
+        "nombre": "Focus",
+        "configuracion": {
+          "label": "Focus",
+          "showIcon": false,
+          "variant": "primary",
+          "size": "default"
+        }
+      },
+      {
+        "nombre": "Disabled",
+        "configuracion": {
+          "label": "Disabled",
+          "variant": "primary",
+          "showIcon": false,
+          "disabled": true
+        }
+      },
+      {
+        "nombre": "ActivePrimaryOutline",
+        "configuracion": {
+          "label": "Default",
+          "showIcon": false,
+          "variant": "primary-outline",
+          "size": "default"
+        }
+      },
+      {
+        "nombre": "HoverPrimaryOutline",
+        "configuracion": {
+          "label": "Hover",
+          "showIcon": false,
+          "variant": "primary-outline",
+          "size": "default"
+        }
+      },
+      {
+        "nombre": "FocusPrimaryOutline",
+        "configuracion": {
+          "label": "Focus",
+          "showIcon": false,
+          "variant": "primary-outline",
+          "size": "default"
+        }
+      },
+      {
+        "nombre": "DisabledPrimaryOutline",
+        "configuracion": {
+          "label": "Disabled",
+          "variant": "primary-outline",
+          "showIcon": false,
+          "disabled": true
+        }
+      },
+      {
+        "nombre": "ActiveIcon",
+        "configuracion": {
+          "label": "Default",
+          "showIcon": true,
+          "icon": "more_vert",
+          "variant": "icon",
+          "size": "default",
+          "showArrowIcon": false
+        }
+      },
+      {
+        "nombre": "HoverIcon",
+        "configuracion": {
+          "label": "Hover",
+          "showIcon": true,
+          "icon": "more_vert",
+          "variant": "icon",
+          "size": "default",
+          "showArrowIcon": false
+        }
+      },
+      {
+        "nombre": "FocusIcon",
+        "configuracion": {
+          "label": "Focus",
+          "showIcon": true,
+          "icon": "more_vert",
+          "variant": "icon",
+          "size": "default",
+          "showArrowIcon": false
+        }
+      },
+      {
+        "nombre": "DisabledIcon",
+        "configuracion": {
+          "label": "Disabled",
+          "variant": "icon",
+          "showIcon": true,
+          "icon": "more_vert",
+          "disabled": true,
+          "showArrowIcon": false
+        }
+      }
+    ]
+  },
+  {
+    "componenteNombre": "Componentes/Buttons/Button",
+    "selector": "uni-button",
+    "aiHint": "COMPLETAR HINT PARA LA IA",
+    "api": {
+      "inputs": [
+        {
+          "nombre": "label",
+          "tipo": "string",
+          "valorPorDefecto": "''"
+        },
+        {
+          "nombre": "type",
+          "tipo": "import(\"C:/Users/Usuario/Proyectos/UniFrame/uniframe/projects/uniframe/components/buttons/button.types\").ButtonType",
+          "valoresPermitidos": [
+            "button",
+            "submit",
+            "menu",
+            "reset"
+          ]
+        },
+        {
+          "nombre": "size",
+          "tipo": "import(\"C:/Users/Usuario/Proyectos/UniFrame/uniframe/projects/uniframe/components/buttons/button.types\").ButtonSize",
+          "valoresPermitidos": [
+            "sm",
+            "lg",
+            "default"
+          ]
+        },
+        {
+          "nombre": "variant",
+          "tipo": "import(\"C:/Users/Usuario/Proyectos/UniFrame/uniframe/projects/uniframe/components/buttons/button.types\").ButtonVariant",
+          "valoresPermitidos": [
+            "primary",
+            "primary-outline",
+            "negative",
+            "negative-outline",
+            "icon",
+            "link"
+          ]
+        },
+        {
+          "nombre": "icon",
+          "tipo": "string"
+        },
+        {
+          "nombre": "showIcon",
+          "tipo": "boolean"
+        },
+        {
+          "nombre": "disabled",
+          "tipo": "boolean",
+          "valorPorDefecto": "false"
+        },
+        {
+          "nombre": "rotateIcon",
+          "tipo": "boolean",
+          "valorPorDefecto": "false"
+        },
+        {
+          "nombre": "inheritHeight",
+          "tipo": "boolean",
+          "valorPorDefecto": "false"
+        },
+        {
+          "nombre": "template",
+          "tipo": "import(\"C:/Users/Usuario/Proyectos/UniFrame/uniframe/node_modules/@angular/core/chrome_dev_tools_performance.d\").WritableSignal<import(\"C:/Users/Usuario/Proyectos/UniFrame/uniframe/projects/uniframe/components/buttons/button/button.component\").ButtonTemplate>",
+          "valorPorDefecto": "signal<ButtonTemplate>({})"
+        },
+        {
+          "nombre": "ariaLabel",
+          "tipo": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "nombre": "onClick",
+          "tipo": "void"
+        }
+      ]
+    },
+    "documentacion": {},
+    "ejemplos": [
+      {
+        "nombre": "Primary",
+        "configuracion": {
+          "label": "Primary Button",
+          "icon": "check_circle",
+          "showIcon": true,
+          "variant": "primary",
+          "size": "default"
+        }
+      },
+      {
+        "nombre": "PrimaryOutline",
+        "configuracion": {
+          "label": "Primary Outline Button",
+          "icon": "check_circle",
+          "showIcon": true,
+          "variant": "primary-outline"
+        }
+      },
+      {
+        "nombre": "Negative",
+        "configuracion": {
+          "label": "Negative Button",
+          "icon": "check_circle",
+          "showIcon": true,
+          "variant": "negative"
+        }
+      },
+      {
+        "nombre": "NegativeOutline",
+        "configuracion": {
+          "label": "Negative Outline Button",
+          "icon": "check_circle",
+          "showIcon": true,
+          "variant": "negative-outline"
+        }
+      },
+      {
+        "nombre": "Icon",
+        "configuracion": {
+          "icon": "check_circle",
+          "showIcon": true,
+          "variant": "icon",
+          "label": "Icon Button"
+        }
+      },
+      {
+        "nombre": "Link",
+        "configuracion": {
+          "label": "Link",
+          "showIcon": false,
+          "variant": "link"
+        }
+      },
+      {
+        "nombre": "PrimaryVariant",
+        "configuracion": {
+          "label": "Primary",
+          "icon": "check_circle",
+          "showIcon": true,
+          "variant": "primary-outline"
+        }
+      },
+      {
+        "nombre": "Default",
+        "configuracion": {
+          "label": "Default",
+          "showIcon": false,
+          "variant": "primary",
+          "size": "default"
+        }
+      },
+      {
+        "nombre": "Small",
+        "configuracion": {
+          "label": "Small",
+          "showIcon": false,
+          "variant": "primary",
+          "size": "sm"
+        }
+      },
+      {
+        "nombre": "Disabled",
+        "configuracion": {
+          "label": "Disabled",
+          "showIcon": false,
+          "variant": "primary",
+          "size": "default",
+          "disabled": true
+        }
+      },
+      {
+        "nombre": "Active",
+        "configuracion": {
+          "label": "Default",
+          "showIcon": false,
+          "variant": "primary",
+          "size": "default"
+        }
+      },
+      {
+        "nombre": "Hover",
+        "configuracion": {
+          "label": "Hover",
+          "showIcon": false,
+          "variant": "primary",
+          "size": "default"
+        }
+      },
+      {
+        "nombre": "Focus",
+        "configuracion": {
+          "label": "Focus",
+          "showIcon": false,
+          "variant": "primary",
+          "size": "default"
+        }
+      },
+      {
+        "nombre": "DisabledOutline",
+        "configuracion": {
+          "label": "Disabled",
+          "showIcon": false,
+          "variant": "primary-outline",
+          "size": "default",
+          "disabled": true
+        }
+      },
+      {
+        "nombre": "ActiveOutline",
+        "configuracion": {
+          "label": "Default",
+          "showIcon": false,
+          "variant": "primary-outline",
+          "size": "default"
+        }
+      },
+      {
+        "nombre": "HoverOutline",
+        "configuracion": {
+          "label": "Hover",
+          "showIcon": false,
+          "variant": "primary-outline",
+          "size": "default"
+        }
+      },
+      {
+        "nombre": "FocusOutline",
+        "configuracion": {
+          "label": "Focus",
+          "showIcon": false,
+          "variant": "primary-outline",
+          "size": "default"
+        }
+      },
+      {
+        "nombre": "DisabledNegative",
+        "configuracion": {
+          "label": "Disabled",
+          "showIcon": false,
+          "variant": "negative",
+          "size": "default",
+          "disabled": true
+        }
+      },
+      {
+        "nombre": "ActiveNegative",
+        "configuracion": {
+          "label": "Default",
+          "showIcon": false,
+          "variant": "negative",
+          "size": "default"
+        }
+      },
+      {
+        "nombre": "HoverNegative",
+        "configuracion": {
+          "label": "Hover",
+          "showIcon": false,
+          "variant": "negative",
+          "size": "default"
+        }
+      },
+      {
+        "nombre": "FocusNegative",
+        "configuracion": {
+          "label": "Focus",
+          "showIcon": false,
+          "variant": "negative",
+          "size": "default"
+        }
+      },
+      {
+        "nombre": "DisabledNegativeOutline",
+        "configuracion": {
+          "label": "Disabled",
+          "showIcon": false,
+          "variant": "negative-outline",
+          "size": "default",
+          "disabled": true
+        }
+      },
+      {
+        "nombre": "ActiveNegativeOutline",
+        "configuracion": {
+          "label": "Default",
+          "showIcon": false,
+          "variant": "negative-outline",
+          "size": "default"
+        }
+      },
+      {
+        "nombre": "HoverNegativeOutline",
+        "configuracion": {
+          "label": "Hover",
+          "showIcon": false,
+          "variant": "negative-outline",
+          "size": "default"
+        }
+      },
+      {
+        "nombre": "FocusNegativeOutline",
+        "configuracion": {
+          "label": "Focus",
+          "showIcon": false,
+          "variant": "negative-outline",
+          "size": "default"
+        }
+      },
+      {
+        "nombre": "DisabledIcon",
+        "configuracion": {
+          "showIcon": true,
+          "icon": "more_vert",
+          "variant": "icon",
+          "size": "default",
+          "disabled": true
+        }
+      },
+      {
+        "nombre": "ActiveIcon",
+        "configuracion": {
+          "showIcon": true,
+          "icon": "more_vert",
+          "variant": "icon",
+          "size": "default"
+        }
+      },
+      {
+        "nombre": "HoverIcon",
+        "configuracion": {
+          "showIcon": true,
+          "icon": "more_vert",
+          "variant": "icon",
+          "size": "default"
+        }
+      },
+      {
+        "nombre": "FocusIcon",
+        "configuracion": {
+          "showIcon": true,
+          "icon": "more_vert",
+          "variant": "icon",
+          "size": "default"
+        }
+      },
+      {
+        "nombre": "DisabledLink",
+        "configuracion": {
+          "label": "Disabled",
+          "showIcon": false,
+          "variant": "link",
+          "size": "default",
+          "disabled": true
+        }
+      },
+      {
+        "nombre": "ActiveLink",
+        "configuracion": {
+          "label": "Default",
+          "showIcon": false,
+          "variant": "link",
+          "size": "default"
+        }
+      },
+      {
+        "nombre": "HoverLink",
+        "configuracion": {
+          "label": "Hover",
+          "showIcon": false,
+          "variant": "link",
+          "size": "default"
+        }
+      },
+      {
+        "nombre": "FocusLink",
+        "configuracion": {
+          "label": "Focus",
+          "showIcon": false,
+          "variant": "link",
+          "size": "default"
+        }
+      }
+    ]
   }
 ]
